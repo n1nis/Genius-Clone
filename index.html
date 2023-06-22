@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Genius clone</title>
+    <script
+      src="https://kit.fontawesome.com/e004fd62f5.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="shortcut icon" type="image/x-icon" href="./img/webLogo.png" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <nav>
+      <div class="serachBar">
+        <form class="formBar">
+          <input
+            type="search"
+            name="serachInput"
+            id="searchInput"
+            placeholder="Search lyrics & more"
+          />
+        </form>
+      </div>
+      <div class="middleBar">
+        <a href="index.html"><img src="./img/logo.png" alt="logo" /></a>
+      </div>
+      <div class="userBar">
+        <a href="#">Sign up</a>
+        <a href="#">Sign in</a>
+      </div>
+    </nav>
+    <div class="secondNav">
+      <div class="links">
+        <a href="#">featured</a>
+        <a href="#charts">charts</a>
+        <a href="#videos">videos</a>
+        <a href="https://promote.genius.com/">promote your music</a>
+      </div>
+      <div class="icons">
+        <a href="https://www.facebook.com/Genius/"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://twitter.com/Genius"><i class="fa-brands fa-twitter"></i></a>
+        <a href="https://www.instagram.com/genius/"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.youtube.com/genius"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+    </div>
+
+    <main>
+      <div class="news" id="news">
+        <section>
+          <a href="#">
+            <div class="newsInfo">
+              <p>NEWS</p>
+              <h2>Dancing in the Moonlight</h2>
+              <p>Catchy and upbeat song</p>
+              <p>Originally recorded in 1972, covered by various artists</p>
+            </div>
+          </a>
+          <div class="newsImg"></div>
+        </section>
+        <section>
+          <div class="singleNews">
+            <div class="singleNewsInfo">
+              <p>NEWS</p>
+              <h2>Catchy hip-hop anthem by Kacper HTA & fonos</h2>
+            </div>
+            <div class="singleNewsDescription">
+              by Vista / Jun 19 2023
+            </div>
+            <div class="singleNewsImg"></div>
+          </div>
+          <div class="singleNews">
+            <div class="singleNewsInfo">
+              <p>NEWS</p>
+              <h2>NCT DREAM Struggle With Long-Distance Love On New Song “Broken Melodies"</h2>
+            </div>
+            <div class="singleNewsDescription">
+              by Ang0l4t Newa / Jun 15 2023
+            </div>
+            <div class="singleNewsImg"></div>
+          </div>
+          <div class="singleNews">
+            <div class="singleNewsInfo">
+              <p>NEWS</p>
+              <h2>The Weeknd Isn’t Anyone’s Hero On New Song ”A Lesser Man”</h2>
+            </div>
+            <div class="singleNewsDescription">
+              by ufs174 / Jun 11 2023
+            </div>
+            <div class="singleNewsImg"></div>
+          </div>
+          <div class="singleNews">
+            <div class="singleNewsInfo">
+              <p>NEWS</p>
+              <h2>Their best song 'SUDOKU' gives FONOS the biggest opportunity to rise to the top</h2>
+            </div>
+            <div class="singleNewsDescription">
+              by kartafalsa / Jun 10 2023
+            </div>
+            <div class="singleNewsImg"></div>
+          </div>
+        </section>
+      </div>
+
+      <div class="charts" id="charts">
+        <div class="chartsTop">
+          <h2>CHARTS</h2>
+          <select name="sort" id="sort">
+            <option value="SortedA">SORTED BY: ASC</option>
+            <option value="SortedZ">SORTED BY: DESC</option>
+          </select>
+        </div>
+        <div class="chartsList">
+          <ul class="ulList"></ul>
+        </div>
+      </div>
+      <button class="loadBtn lighterBtn hide">LOAD MORE</button>
+      <div class="loader"></div>
+      <p class="loaderP"></p>
+    </main>
+  <div class="videos" id="videos">
+      <div class="videosText">
+        <h2>VIDEOS</h2>
+        <h3>GENIUS ORIGINAL SERIES</h3>
+      </div>
+      <div class="videosContainer">
+        <a href="https://www.youtube.com/watch?v=0Lx2Cf-VAcM"><div class="video"></div></a>
+        <div class="videoLink">
+          <a href="#">
+            <h2>FONOS - MOONWALK: An Enchanting Musical Journey</h2>
+            <p>
+              Mesmerizing rap anthem that deftly combines infectious beats, clever wordplay, taking listeners on a thrilling musical adventure
+            </p>
+            <p>by ButterlyHoney / Jun 15 2023</p>
+          </a>
+        </div>
+      </div>
+      <button class="loadBtn hide">LOAD MORE</button>
+      <div class="loader"></div>
+      <p class="loaderP"></p>
+    </div>
+
+    <div class="community">
+      <div class="communityContainer">
+        <div class="communityText">
+          <h2>COMMUNITY</h2>
+          <h3>
+            GENIUS’S COMMUNITY OF CONTRIBUTORS POWERS THE WORLD’S BIGGEST
+            COLLECTION OF SONG LYRICS AND MUSICAL KNOWLEDGE.
+          </h3>
+        </div>
+        <div class="communityBtns">
+          <button class="loadBtn lighterBtn">JOIN OUR COMMUNITY</button>
+          <button class="loadBtn lighterBtn">LEARN HOW GENIUS WORKS</button>
+        </div>
+        <div class="communityList">
+          <div class="communityHeader">
+            <div class="userRankHeader">RANK</div>
+            <div class="userNameHeader">TOP SCHOLARS TODAY</div>
+            <div class="userIqHeader">IQ EARNED TODAY</div>
+          </div>
+          <div class="usersList">
+            <div class="userRank">1</div>
+            <div class="users">
+              <div class="userAvatar"></div>
+              <div class="userInfo">
+                <div class="userName">Chloe Conlon</div>
+                <div class="userRole">
+                  MODERATOR<span
+                    ><i
+                      class="fa-solid fa-star fa-bounce"
+                      style="color: #ffff00"
+                    ></i
+                  ></span>
+                </div>
+              </div>
+            </div>
+            <div class="userIq">4,304</div>
+          </div>
+          <div class="usersList">
+            <div class="userRank">2</div>
+            <div class="users">
+              <div class="userAvatar"></div>
+              <div class="userInfo">
+                <div class="userName">SeijaSukuna</div>
+                <div class="userRole">
+                  ADMIN<span
+                    ><i
+                      class="fa-solid fa-heart"
+                      style="color: #ff0000"
+                    ></i
+                  ></span>
+                </div>
+              </div>
+            </div>
+            <div class="userIq">3,819</div>
+          </div>
+          <div class="usersList">
+            <div class="userRank">3</div>
+            <div class="users">
+              <div class="userAvatar"></div>
+              <div class="userInfo">
+                <div class="userName">Gift_RealG</div>
+                <div class="userRole">
+                  CONTRIBUTOR<span
+                    ><i class="fa-solid fa-house" style="color: #38f044;"></i></span>
+                </div>
+              </div>
+            </div>
+            <div class="userIq">2,356</div>
+          </div>
+          <div class="usersList">
+            <div class="userRank">4</div>
+            <div class="users">
+              <div class="userAvatar"></div>
+              <div class="userInfo">
+                <div class="userName">ShaggyJ2002</div>
+                <div class="userRole">
+                  TRANSCRIBER<span
+                    ><i
+                      class="fa-sharp fa-regular fa-square fa-spin"
+                      style="color: #005eff"
+                    ></i
+                  ></span>
+                </div>
+              </div>
+            </div>
+            <div class="userIq">2,324</div>
+          </div>
+          <div class="usersList">
+            <div class="userRank">5</div>
+            <div class="users">
+              <div class="userAvatar"></div>
+              <div class="userInfo">
+                <div class="userName">Ferbinho</div>
+                <div class="userRole">
+                  MODERATOR<span
+                    ><i
+                      class="fa-solid fa-star fa-bounce"
+                      style="color: #ffff00"
+                    ></i
+                  ></span>
+                </div>
+              </div>
+            </div>
+            <div class="userIq">1,860</div>
+          </div>
+          <div class="usersList">
+            <div class="userRank">6</div>
+            <div class="users">
+              <div class="userAvatar"></div>
+              <div class="userInfo">
+                <div class="userName">OTom</div>
+                <div class="userRole">
+                  CONTRIBUTOR<span
+                    ><i class="fa-solid fa-house" style="color: #38f044;"></i></i
+                  ></span>
+                </div>
+              </div>
+            </div>
+            <div class="userIq">1,501</div>
+          </div>
+          <div class="usersList">
+            <div class="userRank">7</div>
+            <div class="users">
+              <div class="userAvatar"></div>
+              <div class="userInfo">
+                <div class="userName">proofi</div>
+                <div class="userRole">
+                  CONTRIBUTOR<span
+                    ><i class="fa-solid fa-house" style="color: #38f044;"></i></span>
+                </div>
+              </div>
+            </div>
+            <div class="userIq">1,410</div>
+          </div>
+          <div class="usersList">
+            <div class="userRank">8</div>
+            <div class="users">
+              <div class="userAvatar"></div>
+              <div class="userInfo">
+                <div class="userName">CER10</div>
+                <div class="userRole">
+                  TRANSCRIBER<span
+                    ><i
+                      class="fa-sharp fa-regular fa-square fa-spin"
+                      style="color: #005eff"
+                    ></i
+                  ></span>
+                </div>
+              </div>
+            </div>
+            <div class="userIq">1,346</div>
+          </div>
+          <div class="usersList">
+            <div class="userRank">9</div>
+            <div class="users">
+              <div class="userAvatar"></div>
+              <div class="userInfo">
+                <div class="userName">ankerlos123</div>
+                <div class="userRole">
+                  MODERATOR<span
+                    ><i
+                      class="fa-solid fa-star fa-bounce"
+                      style="color: #ffff00"
+                    ></i
+                  ></span>
+                </div>
+              </div>
+            </div>
+            <div class="userIq">1,246</div>
+          </div>
+          <div class="usersList">
+            <div class="userRank">10</div>
+            <div class="users">
+              <div class="userAvatar"></div>
+              <div class="userInfo">
+                <div class="userName">1llsun</div>
+                <div class="userRole">
+                  TRANSCRIBER<span
+                    ><i
+                      class="fa-sharp fa-regular fa-square fa-spin"
+                      style="color: #005eff"
+                    ></i
+                  ></span>
+                </div>
+              </div>
+            </div>
+            <div class="userIq">1,238</div>
+          </div>
+        </div>
+      </div>
+      <button class="loadBtn lighterBtn hide">LOAD MORE</button>
+      <div class="loader"></div>
+      <p class="loaderP"></p>
+    </div>
+
+    <footer>
+      <div class="upperFooter">
+        <section>
+          <h1>
+            Genius is the world’s biggest collection of song lyrics and musical
+            knowledge
+          </h1>
+          <a href="https://www.facebook.com/Genius/"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://twitter.com/Genius"><i class="fa-brands fa-twitter"></i></a>
+        <a href="https://www.instagram.com/genius/"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.youtube.com/genius"><i class="fa-brands fa-youtube"></i></a>
+        </section>
+        <section>
+          <section class="left">
+            <a href="#">About Genius</a>
+            <a href="#">Contributor Guidelines</a>
+            <a href="#">Press</a>
+            <a href="#">Shop</a>
+            <a href="#">Advertise</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Privacy Preferences</a>
+            <br />
+            <br />
+            <br />
+            <p>&copy; 2023 ML Genius Holdings, LLC</p>
+          </section>
+          <section class="right">
+            <a href="#">Licensing</a>
+            <a href="#">Jobs</a>
+            <a href="#">Developers</a>
+            <a href="#">Copyright Policy</a>
+            <a href="#">Contact Us</a>
+            <a href="#">Sign In</a>
+            <a href="#">Do Not Sell My Personal Information</a>
+            <br />
+            <br />
+            <br />
+            <p>Trems of Use</p>
+          </section>
+        </section>
+      </div>
+      <hr />
+      <div class="lowerFooter">
+        <div class="alphabet">
+          <a href="#">VERIFIED ARTISTS</a>
+          <p>ALL ARTISTS:</p> <a href="#">A</a> <a href="#">B</a> <a href="#">C</a> <a href="#">D</a> <a href="#">E</a> <a href="#">F</a> <a href="#">G</a> <a href="#">H</a> <a href="#">I</a> <a href="#">J</a> <a href="#">K</a> <a href="#">L</a> <a href="#">M</a> <a href="#">N</a> <a href="#">O</a> <a href="#">P</a> <a href="#">Q</a> <a href="#">R</a> <a href="#">S</a> <a href="#">T</a> <a href="#">U</a> <a href="#">V</a> <a href="#">W</a> <a href="#">X</a> <a href="#">Y</a> <a href="#">Z</a>
+        </div>
+        <div class="languages">
+          <p>HOT SONGS:</p>
+          <a href="#">YOASOBI - アイドル (IDOL) (ROMANIZED)
+          </a>
+          <a href="#">CUPID (TWIN VERSION)</a>
+          <a href="#">MIMIMAUMAMU</a>
+          <a href="#">ATTENTION</a>
+          <a href="#">FUKUMEAN</a>
+          <a href="#">VIEW ALL</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
